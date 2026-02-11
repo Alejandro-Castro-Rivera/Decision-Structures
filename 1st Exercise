@@ -1,0 +1,19 @@
+hours_worked = input("Hours worked:",)
+hour_rate = input("Hourly rate:",)
+if float(hours_worked) > 40:
+    overtime = float(hours_worked) - 40
+    salary = 40 * float(hour_rate) + (float(overtime) * float(hour_rate) * 1.5)
+else:
+    salary = float(hours_worked) * float(hour_rate)
+print("Salary:", round(float(salary),2))
+
+When a worker exceeds 40 hours worked in a week they need to be paid overtime at 1.5 times their hourly rate
+
+ User inputs:
+   Hours worked (int ): The number of hours the employee has worked during the week.
+   Hourly rate (float): The pay rate the employee receives under normal conditions.
+
+ Expected output:
+   Salary (float): Total pay due to the employee, including the extra charge for overtime
+ 
+Use the round() function to round to two decimal places.
