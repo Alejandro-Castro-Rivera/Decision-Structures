@@ -1,0 +1,21 @@
+age = input("Enter your age: ",)
+city = input("Enter your city: ",)
+if 18 <= int(age) <= 35 and str(city) == "City A":
+    print("Access granted to the special event.")
+elif 18 <= int(age) <= 35 and str(city) == "City B":
+    print("Access granted to the special event.")
+elif 18 <= int(age) <= 35 and str(city) == "City C":
+    print("Access granted to the special event.")
+else:
+    print("Access denied to the special event.")
+
+ Write a program to determine if a user can access a special event based on their
+ age and geographic location. The event is only for individuals aged 18 to 35 who
+ live in "City A", "City B", or "City C".
+
+ User inputs:
+   Age (int): Number representing the user's age.
+   City (str): Name of the city where the user lives.
+
+ Expected output:
+   Access (str): Message indicating whether or not the user has access to the event.
